@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+header {
+    background-image: url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    header .btn {
+        border-radius: 50px;
+    }
+
+img {
+    border-radius: 10px;
+}
+
+#eventList li {
+    padding: 10px;
+    background-color: #e9ecef;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#eventList button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+    #eventList button:hover {
+        background-color: #c82333;
+    }
+
+.form-control, .form-select {
+    border-radius: 20px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+#eventForm {
+    border-radius: 20px;
+}
