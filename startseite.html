@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="bg-dark text-white text-center py-5">
-        <a href="C:\Users\Vu\source\repos\FriseurTest\startseite.html">
+        <a href="index.html">
             <img src="logo.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
         </a>
         <h1 class="display-4">Willkommen bei Ihrem Friseur</h1>
@@ -18,7 +18,7 @@
         <button class="btn btn-primary btn-lg rounded-pill mt-3" data-bs-toggle="modal" data-bs-target="#terminModal">Termin buchen</button>
     </header>
 
-    <section class="container mt-5 text-center">
+    <section class="container mt-5 text-center flex-grow-1">
         <h2 class="mb-4">Unsere Services</h2>
         <p class="lead mb-5">Wir bieten eine Vielzahl von Dienstleistungen an, darunter Haarschnitte, Färben, Styling und mehr.</p>
         <div class="row">
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
         <p>&copy; 2024 Ihr Friseur. Alle Rechte vorbehalten.</p>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="kontakt.html" class="text-white">Kontakt</a></li>
@@ -64,6 +64,15 @@
                         <div class="mb-3">
                             <label for="eventName" class="form-label">Name:</label>
                             <input type="text" class="form-control rounded-pill" id="eventName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Dienstleistung:</label>
+                            <select id="service" class="form-select rounded-pill" required>
+                                <option value="">Bitte Dienstleistung auswählen</option>
+                                <option value="Haarschnitt">Haarschnitt</option>
+                                <option value="Färben">Färben</option>
+                                <option value="Styling">Styling</option>
+                            </select>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
